@@ -1,0 +1,3 @@
+<app-header *ngIf="currentMovie"></app-header>
+<app-display-movie *ngIf="currentMovie" [movie]="currentMovie"></app-display-movie>
+<app-search *ngIf="!currentMovie"></app-search>

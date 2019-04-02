@@ -1,0 +1,7 @@
+
+<div class="search">
+  <input type="text" placeholder="type a movie name" [(ngModel)]="search">
+  <button (click)="onSearch(search)">search</button>
+</div>
+<app-movie-preview *ngFor="let movie of searchResult" [movie]="movie" (click)="onMovieChange(movie)"></app-movie-preview>
+<h2 *ngIf="show">No Result Found !!</h2>
